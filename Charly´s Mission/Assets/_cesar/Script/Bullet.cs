@@ -7,18 +7,19 @@ public class Bullet : MonoBehaviour
 
     public float speed;
     public float destroyDelay = 2f;
-    private Rigidbody2D _bulletRb;
+    private GameObject _bulletRb;
+    public Rigidbody2D Rb;
 
     void Awake()
     {
 
-        _bulletRb = GetComponent<Rigidbody2D>();
+        Rb = _bulletRb.GetComponent<Rigidbody2D>();
 
     }
 
     public void LaunchBullet(Vector2 direction)
     {
-        _bulletRb.velocity = direction * speed;
+        Rb.velocity = direction * speed;
         Destroy(gameObject, destroyDelay);
     }
 
