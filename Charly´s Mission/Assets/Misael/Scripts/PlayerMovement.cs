@@ -20,10 +20,10 @@ public class PlayerMovement : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        if (joystick.Vertical >= 0.5f && Isgrounded.isgrounded)
+        if (joystick.Vertical >= 0.2f && Isgrounded.isgrounded)
         {
             Jump();
         }
