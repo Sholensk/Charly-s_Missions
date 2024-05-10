@@ -4772,7 +4772,7 @@ MonoBehaviour:
   runspeedvertical: 3
   runspeed: 1
   joystick: {fileID: 1688336225}
-  jumpForce: 2
+  jumpForce: 0.5
 --- !u!50 &1239390492
 Rigidbody2D:
   serializedVersion: 4

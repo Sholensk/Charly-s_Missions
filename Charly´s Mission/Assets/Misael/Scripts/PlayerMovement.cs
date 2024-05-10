@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (joystick.Vertical >= 0.5f && Isgrounded.isgrounded)
+        if (joystick.Vertical >= 0.3f && Isgrounded.isgrounded)
         {
             Jump();
         }
